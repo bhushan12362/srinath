@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Srinath Agritech</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('poster.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.6); /* halki si dark layer for contrast */
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .video-card {
+      background: rgba(255,255,255,0.9);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      margin: 20px 0;
+      max-width: 800px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .video-card video {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .description {
+      padding: 15px 20px;
+    }
+
+    .description h3 {
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    .description p {
+      margin-top: 8px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+
+    <!-- Video 1 -->
+    <div class="video-card">
+      <video controls poster="poster.jpg">
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support video tag.
+      </video>
+      <div class="description">
+        <h3>Video 1</h3>
+        <p>Yeh pehla demo video hai jo background ke upar run ho raha hai.</p>
+      </div>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video-card">
+      <video controls poster="poster.jpg">
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support video tag.
+      </video>
+      <div class="description">
+        <h3>Video 2</h3>
+        <p>Dusra video bhi isi background poster ke saath run ho raha hai.</p>
+      </div>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="video-card">
+    <video controls poster="poster.jpg">
+        <source src="video3.mp4" type="video/mp4">
+        Your browser does not support video tag.
+      </video>
+      <div class="description">
+        <h3>Video 3</h3>
+        <p>Tisra video bhi isi design ke andar chalega.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
